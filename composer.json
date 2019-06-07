@@ -1,0 +1,19 @@
+{
+    "name": "lyxxxh/lartree",
+    "description": "树结构生成",
+    "authors": [
+        {
+            "name": "xxh",
+            "email": "449399575@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-0": {
+            "Xxh\\LarTree": "src/"
+        }
+    }
+
+
+
+}
