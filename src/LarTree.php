@@ -43,7 +43,7 @@ trait LarTree
 
 
         //这里吃很多内存
-        $datas = DB::table($table)->get($this->getField())->toArray();
+        $datas = DB::table($table)->get(self::$field)->toArray();
         $this->setDataContainer($datas);
     }
 
@@ -64,7 +64,7 @@ trait LarTree
                 $arr[$key] = (array)$data;
 
 
-                $arr[$key]['child'] = $this->getTableTree($data['id']);
+                $arr[$key]['child'] = $this->getTableTree($data[self::$son]);
             }
         };
 
@@ -75,8 +75,6 @@ trait LarTree
     {
         return self::$datas;
     }
-
-
 
 
 
@@ -94,10 +92,9 @@ trait LarTree
 
 
 
-    //获取从数据容器获取
+    //获取这个数据的儿子数据
     public function getDataContainer($pid)
     {
-
         return self::$datas;
     }
 
@@ -111,11 +108,11 @@ trait LarTree
 
 
 
-    //设置父亲名称
-    public function setFatherName()
+    //设置父亲和儿子名称
+    public function setFatherSonName($son='id',$father='pid')
     {
-
-
+        self::$son = $son;
+        self::$field = $father;
     }
 
 
@@ -132,10 +129,7 @@ trait LarTree
     }
 
 
-    public function getField()
-    {
-        return self::$field;
-    }
+
 
 
 
