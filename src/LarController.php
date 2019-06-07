@@ -2,8 +2,7 @@
 namespace Xxh\LarTree;
 
 use App\Http\Controllers\Controller;
-use Xxh\LarTree\Services\LarTreeServices;
-
+use Xxh\LarTree\LarTree;
 class LarController extends Controller {
 
     use LarTree;

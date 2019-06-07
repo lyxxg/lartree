@@ -27,28 +27,14 @@
 ### 安装
   1. composer require lyxxxh/lartree 
    
-
-
-
-#### 查看例子(不使用也可以)
-![例子](https://xxh-download.cdn.bcebos.com/ex.png)
-
-    1.在app/config.php的providers添加
-      Xxh\LarModel\LarTreeProvider::class
- 	2. php artisan vendor:publish --provider="Xxh\LarModel\LarTreeProvider::class"
- 	3. 导入user 下面附数据库 （我测试的数据库）
-[600条sql](https://xxh-download.cdn.bcebos.com/600.sql)
-[4w条sql](https://xxh-download.cdn.bcebos.com/4w.sql)
-[10w条sql](https://xxh-download.cdn.bcebos.com/10w.sql)
-    
-
  	
  	
 ####  生成树使用方法(可参考LarController)
 
  ```
- //引入命名空间
- use Xxh\LarTree\Services\LarTreeServices;
+ //使用命名空间
+ use Xxh\LarTree\LarTree;
+
  class LarController extends Controller {
  
    use LarTree; //使用LarTree
@@ -74,6 +60,22 @@
      
 
 ```
+
+
+#### 使用系统树
+这是使用ztree生成的 
+![例子](https://xxh-download.cdn.bcebos.com/ex.png)
+
+    1.在app/config.php的providers添加
+      Xxh\LarModel\LarTreeProvider::class
+ 	2. php artisan vendor:publish --provider="Xxh\LarTree\LarTreeProvider"
+ 	3. 导入user 下面附数据库 （我测试的数据库）
+[600条sql](https://xxh-download.cdn.bcebos.com/600.sql)
+[4w条sql](https://xxh-download.cdn.bcebos.com/4w.sql)
+[10w条sql](https://xxh-download.cdn.bcebos.com/10w.sql)
+    
+    
+    
 
 #### 自定义
 

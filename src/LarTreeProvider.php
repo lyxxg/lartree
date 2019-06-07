@@ -16,7 +16,6 @@ class LarTreeProvider extends ServiceProvider
     public function boot()
     {
 
-
         $this->loadViewsFrom(__DIR__.'/views', 'lartree');
         $this->publishes([
             __DIR__.'/views' => resource_path('views/lartree'),
