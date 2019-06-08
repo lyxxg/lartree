@@ -24,11 +24,10 @@
 
 
 ### 傻瓜式一次次查询
+![傻瓜式](https://xxh-download.cdn.bcebos.com/forsql.png) 
     查询到1 where pid = 1 
-    查询到2 where pid = 2 
-    查询到3 where pid = 3
-    因此1k个查询则产上1k个sql
-        
+    查询到2 where pid = 2     
+    查询到3 where pid = 3        
 | 数据量(条)     | 时间(s)  | 内存(m) 
 |  ---- | ----   | ---     
 | 146   |  0.72  | 2.81    
