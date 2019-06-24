@@ -51,6 +51,7 @@
       Xxh\LarTree\LarTreeProvider::class
  	2. php artisan vendor:publish --provider="Xxh\LarTree\LarTreeProvider::class"
  	3. 导入user 下面附数据库 （我测试的数据库）
+  4. 打开/lar_tree  即可看到和上面一样的dom
 [600条sql](https://xxh-download.cdn.bcebos.com/600.sql)
 [4w条sql](https://xxh-download.cdn.bcebos.com/4w.sql)
 [10w条sql](https://xxh-download.cdn.bcebos.com/10w.sql)
