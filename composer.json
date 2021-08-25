@@ -10,7 +10,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Xxh\\LarTree": "src/"
+            "Xxh\\LarTree\\": "src/"
         }
     }
 
